@@ -1,9 +1,9 @@
 {
-  "name": "whatsapp-commerce",
+  "name": "chatcart",
   "private": true,
   "scripts": {
     "dev": "pnpm -r dev",
     "build": "pnpm -r build",
-    "lint": "pnpm -r lint"
+    "pages:build": "./scripts/build-pages-docs.sh"
   }
 }
