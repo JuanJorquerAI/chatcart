@@ -1,3 +1,3 @@
-This folder is the GitHub Pages publish target.
+GitHub Pages publish target.
 - Landing: /
-- App (console): /app
+- App: /app
