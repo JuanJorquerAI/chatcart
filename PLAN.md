@@ -6,7 +6,8 @@
 - [ ] Publish to GitHub Pages and keep it updated
 
 ## Phase 1 — Core data + onboarding (functional)
-- [ ] DB schema (Prisma/Postgres): Merchant, WooConfig, WhatsAppConfig, PaymentsConfig, Customer
+- [x] DB schema (Prisma/Postgres): Merchant, WooConfig, WhatsAppConfig, PaymentsConfig, Customer
+- [ ] PaymentsConfig, Customer (pendiente) (Prisma/Postgres): Merchant, WooConfig, WhatsAppConfig, PaymentsConfig, Customer
 - [ ] Console: create merchant + save configs
 - [ ] API: WhatsApp webhook verify + receive message
 - [ ] API: Woo connector: validate credentials + fetch categories

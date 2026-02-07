@@ -1,0 +1,60 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Merchant {
+  id        String   @id @default(cuid())
+  name      String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  woo      WooConfig?
+  whatsapp WhatsAppConfig?
+  audit    AuditEvent[]
+}
+
+model WooConfig {
+  merchantId     String  @id
+  merchant       Merchant @relation(fields: [merchantId], references: [id], onDelete: Cascade)
+
+  storeUrl       String
+  consumerKey    String
+  consumerSecret String
+  enabled        Boolean @default(true)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model WhatsAppConfig {
+  merchantId String  @id
+  merchant   Merchant @relation(fields: [merchantId], references: [id], onDelete: Cascade)
+
+  verifyToken String
+  // placeholders for later
+  phoneNumberId String?
+  wabaId        String?
+
+  enabled   Boolean @default(true)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model AuditEvent {
+  id         String   @id @default(cuid())
+  merchantId String?
+  merchant   Merchant? @relation(fields: [merchantId], references: [id], onDelete: SetNull)
+
+  type       String
+  payload    Json
+
+  createdAt  DateTime @default(now())
+
+  @@index([merchantId, createdAt])
+}
