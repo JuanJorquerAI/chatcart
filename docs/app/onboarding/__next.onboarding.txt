@@ -1,4 +1,4 @@
 1:"$Sreact.fragment"
-2:I[55236,["/app/_next/static/chunks/e7105b23e9823f55.js","/app/_next/static/chunks/df493702e56dc31f.js"],"default"]
-3:I[98833,["/app/_next/static/chunks/e7105b23e9823f55.js","/app/_next/static/chunks/df493702e56dc31f.js"],"default"]
-0:{"buildId":"HVoKwi5tj0EXlFrmP4Woi","rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"loading":null,"isPartial":false}
+2:I[55236,["/chatcart/app/_next/static/chunks/e7105b23e9823f55.js","/chatcart/app/_next/static/chunks/df493702e56dc31f.js"],"default"]
+3:I[98833,["/chatcart/app/_next/static/chunks/e7105b23e9823f55.js","/chatcart/app/_next/static/chunks/df493702e56dc31f.js"],"default"]
+0:{"buildId":"y4mKl2sOU46n4rLZAF1ZF","rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"loading":null,"isPartial":false}
