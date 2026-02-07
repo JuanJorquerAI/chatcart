@@ -29,4 +29,7 @@ else
   cp -R apps/app/out/* docs/app/
 fi
 
+# Ensure GitHub Pages serves _next/ assets (Jekyll would ignore underscore paths)
+touch docs/.nojekyll
+
 echo "Built to docs/ (landing) and docs/app (console) for GitHub Pages /chatcart"
